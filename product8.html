@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheets" href="style.css">
+        <style>
+            :root{
+    --pink:#e84393;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: verdana, Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear; 
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.products .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(225, 51, 153, .05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.products .box-container .box .image img{
+    height: 25rem;
+    width: 250px;
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color: #fff;
+}
+.products .box-container .box .image .icons .cart-btn{
+    border-left: 1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+.products .box-container .box .image .icons a:hover{
+    background: #333;
+}
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.products .box-container .box .content .price{
+    font-size: 2.5rem;   
+    color: var(--pink);
+    font-weight: bolder;
+    padding: 1rem;
+}
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+        </style>
+        </head>
+        <body>
+            <section class="products" id="products">
+                <h1 style="text-align: center; font-size: xx-large; color: #e84393;" class="heading">TULIPS <span> VERITIES</span> </h1>
+                <div id="products" class="box-container">
+    
+                 <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="b1floralEnchantmentbouquet.webp" alt="">
+                        <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="order.html" class="cart-btn">ORDER NOW</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>FLORAL ENCHANTMENT BOUQUET</h3>
+                    <div class="price">900RS. <span>1000RS.</span></div>
+                </div>
+             </div>
+    
+             <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <img src="bfront.jpeg" alt="">
+                    <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="order.html" class="cart-btn">ORDER NOW</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>PINK ROSE BOUQUET</h3>
+                <div class="price">950RS. <span>1000RS.</span></div>
+            </div>
+         </div>
+    
+         <div class="box">
+            <span class="discount"></span>
+            <div class="image">
+                <img src="b3whiterose.webp" alt="">
+                <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="order.html" class="cart-btn">ORDER NOW</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>WHITE ROSE BOUQUET</h3>
+            <div class="price">960RS. <span>1000RS.</span></div>
+        </div>
+     </div>
+    
+     <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="b4mixbrilliancegerbra.webp" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>MIX BRILLIANCE GERBRA</h3>
+        <div class="price">1000RS. <span>1000RS.</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="b5charming-purple-rose-bouquet.webp" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>CHARMING PURPLE ROSE BOUQUET</h3>
+        <div class="price">1350RS. <span>1500</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="b6purplepinkrose.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>PURPLE PINK ROSES BOUQUET</h3>
+        <div class="price">1400 <span>1500RS.</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="b7purpledaisy.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>PURPLE DAISY BOUQUET</h3>
+        <div class="price">1800RS. <span>2000RS.</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="b8pinkrose.avif" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>PINK ROSE BOUQUET</h3>
+        <div class="price">900RS. <span>1000RS.</span></div>
+    </div>
+    </div>
+
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="b9sunflower.jpeg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>SUNFLOWER BOUQUET</h3>
+        <div class="price">900RS. <span>1000RS.</span></div>
+    </div>
+ </div>
+
+ <div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b10sunflower.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>SUNFLOWER BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b11sunflowerwithtulips.png" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>SUNFLOWER WITH TULIPS BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b12minisunflower.avif" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>SUNFLOWER MINI BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b13sunflowerwithrose.webp" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>SUNFLOWER WITH ROSE BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b14pinkdaisy.webp" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>PINK DAISY BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b15pasteldaisy.webp" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>PASTLE DAISY BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b16pinkdaisy.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>PINL DAISY BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b17orangegerberas.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>ORANGE GERBRA BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b18pinkdaisy.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>PINK DAISY BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+ <div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b19mixdaisy.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>MIXED DAISY BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="b20whitelilies.webp" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>WHITE LILIES BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+    <img src="b21pinklily.jpg" alt="">
+    <div class="icons">
+    <a href="#" class="fas fa-heart"></a>
+    <a href="order.html" class="cart-btn">ORDER NOW</a>
+    <a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>PINK LILIES BOUQUET</h3>
+<div class="price">950RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b22yellowlily.jpg" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>YELLOW LILIES BOUQUET</h3>
+<div class="price">960RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b23orange.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>ORANGE LILIES BOUQUET</h3>
+<div class="price">1000RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b24rosewithlily.jpg" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>ROSE WITH LILY BOUQUET</h3>
+<div class="price">1350RS. <span>1500</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b25lilywithpink.png" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>WHITE AN PINK LILIES BOUQUET</h3>
+<div class="price">1400 <span>1500RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b26mixroses.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>MIXED ROSES BOUQUET</h3>
+<div class="price">1800RS. <span>2000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b27whitetulips.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>WHITE TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b28mixroses.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>MIXED ROSE BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b29whitetulips.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>WHITE TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b30purpletulips.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>PURPLE TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b31redtulps.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>RED TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b32mixtulips.png" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>MIXED TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b33whitebluetulips.jpg" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>WHITE AND BLUE TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b34bluetulips.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>BLUE TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b35yellowtullips.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>YELLOW TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b36mixtulips.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>MIXED TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b37white.jpg" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>WHITE TULIPS BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+<span class="discount"></span>
+<div class="image">
+<img src="b38blackrose.webp" alt="">
+<div class="icons">
+<a href="#" class="fas fa-heart"></a>
+<a href="order.html" class="cart-btn">ORDER NOW</a>
+<a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="content">
+<h3>BLACK ROSE BOUQUET</h3>
+<div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+    <img src="b39mixedflower.webp" alt="">
+    <div class="icons">
+    <a href="#" class="fas fa-heart"></a>
+    <a href="order.html" class="cart-btn">ORDER NOW</a>
+    <a href="#" class="fas fa-share"></a>
+    </div>
+    </div>
+    <div class="content">
+    <h3>MIXED FLOWERS BOUQUET</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+    </div>
+    </div>
+
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+        <img src="b40mixflower.webp" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+        </div>
+        </div>
+        <div class="content">
+        <h3>MIXED FLOWERS BOUQUET</h3>
+        <div class="price">900RS. <span>1000RS.</span></div>
+        </div>
+        </div>
+
+              </div>
+             </section>
+             <!--products section end-->
+                     <!--footer sectiom start-->
+         <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="flower.html">home</a>
+                    <a href="flower.html">about</a>
+                    <a href="flower.html">products</a>
+                    <a href="flower.html">review</a>
+                    <a href="flower.html">contact</a>
+                </div>
+                
+                 
+
+                <div class="box">
+                    <h3>locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#">+91-9876746885</a>
+                    <a href="#">example@gmail.com</a>
+                    <a href="#">uttar pradesh,india</a>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="credit">created by <span> khushi </span>|| all rights reversed</div>
+         </section>
+         <!--footer sectiom end-->
+
+        </body>
+ </html>

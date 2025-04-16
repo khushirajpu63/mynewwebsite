@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheets" href="style.css">
+        <style>
+            :root{
+    --pink:#e84393;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: verdana, Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear; 
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.products .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(225, 51, 153, .05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.products .box-container .box .image img{
+    height: 25rem;
+    width: 250px;
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color: #fff;
+}
+.products .box-container .box .image .icons .cart-btn{
+    border-left: 1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+.products .box-container .box .image .icons a:hover{
+    background: #333;
+}
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.products .box-container .box .content .price{
+    font-size: 2.5rem;   
+    color: var(--pink);
+    font-weight: bolder;
+    padding: 1rem;
+}
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+        </style>
+        </head>
+        <body>
+            <section class="products" id="products">
+                <h1 style="text-align: center; font-size: xx-large; color: #e84393;" class="heading">TULIPS <span> VERITIES</span> </h1>
+                <div id="products" class="box-container">
+                    <div class="box">
+                        <span class="discount"></span>
+                        <div class="image">
+                            <img src="t1parrot.jpg" alt="">
+                            <div class="icons">
+                            <a href="#" class=""></a>
+                            <a href="order.html" class="cart-btn">ORDER NOW</a>
+                            <a href="#" class=""></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>PARROT TULIPS</h3>
+                        <div class="price">900RS. <span>1000RS.</span></div>
+                    </div>
+                 </div>
+    
+                 <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="t2darwingybrid.jpg" alt="">
+                        <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="order.html" class="cart-btn">ORDER NOW</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>DRAWING HYBRID TULIPS</h3>
+                    <div class="price">900RS. <span>1000RS.</span></div>
+                </div>
+             </div>
+    
+             <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <img src="t3kaufmanniana.jpg" alt="">
+                    <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="order.html" class="cart-btn">ORDER NOW</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>KAUFMANNIANA TULIPS</h3>
+                <div class="price">950RS. <span>1000RS.</span></div>
+            </div>
+         </div>
+    
+         <div class="box">
+            <span class="discount"></span>
+            <div class="image">
+                <img src="t4lily.avif" alt="">
+                <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="order.html" class="cart-btn">ORDER NOW</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>LILY TULIPS</h3>
+            <div class="price">960RS. <span>1000RS.</span></div>
+        </div>
+     </div>
+    
+     <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="t5doubleearly.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>DOUBLE EARLY TULIPS</h3>
+        <div class="price">1000RS. <span>1000RS.</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="t6fringed.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>FRINGED TULIPS</h3>
+        <div class="price">1350RS. <span>1500</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="t7viridiflora.jpeg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>VIRIDI FLORA TULIPS</h3>
+        <div class="price">1400 <span>1500RS.</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="t14yellow.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>YELLOW TULIPS</h3>
+        <div class="price">1800RS. <span>2000RS.</span></div>
+    </div>
+    </div>
+    
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="t9rembrandt.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>REMBRANDT TULIPS</h3>
+        <div class="price">900RS. <span>1000RS.</span></div>
+    </div>
+    </div>
+
+    <div class="box">
+        <span class="discount"></span>
+        <div class="image">
+            <img src="t10singleearly.jpg" alt="">
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="order.html" class="cart-btn">ORDER NOW</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>SINGLE EARLY TULIPS</h3>
+        <div class="price">900RS. <span>1000RS.</span></div>
+    </div>
+ </div>
+
+ <div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t11triumph.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>TRIUMPH TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t12pink.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>PINK TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t13purple.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>PURPULE TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t13red.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>RED TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t15orange.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>ORANGE TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t16white.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>WHITE TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t17blue.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>BLUE TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t18black.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>BLACK TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+<div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t19lightblue.jpg" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>LIGHT BLUE TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+
+ <div class="box">
+    <span class="discount"></span>
+    <div class="image">
+        <img src="t20multicolours.webp" alt="">
+        <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="order.html" class="cart-btn">ORDER NOW</a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="content">
+    <h3>MULTICOLOUR TULIPS</h3>
+    <div class="price">900RS. <span>1000RS.</span></div>
+</div>
+</div>
+              </div>
+             </section>
+             <!--products section end-->
+                     <!--footer sectiom start-->
+         <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="flower.html">home</a>
+                    <a href="flower.html">about</a>
+                    <a href="flower.html">products</a>
+                    <a href="flower.html">review</a>
+                    <a href="flower.html">contact</a>
+                </div>
+                
+                 
+
+                <div class="box">
+                    <h3>locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#">+91-9876746885</a>
+                    <a href="#">example@gmail.com</a>
+                    <a href="#">uttar pradesh,india</a>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="credit">created by <span> khushi </span>|| all rights reversed</div>
+         </section>
+         <!--footer sectiom end-->
+
+        </body>
+ </html>
